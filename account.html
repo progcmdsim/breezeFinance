@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="./css/stylesheetsignup.css" />
+        <link rel="icon" href="images/logo.png" type="image/gif" sizes="16x16" />
+          <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js'></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap" rel="stylesheet" />
+        <title>Breeze</title>
+    </head>
+    <body>
+        <nav>
+            <div class="navxiao">
+                <div class="header">
+                    <input type="checkbox" id="nav" class="hidden" />
+                    <label for="nav" class="nav-btn">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </label>
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="logo" width="35px" class="logo" />
+                        </a>
+                    </div>
+                    <div class="nav-wrapper">
+                        <ul>
+                            <li>
+                                <a href="about.html" class="font">About</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="font">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="account.html" class="font">Account</a>
+                            </li>
+                                                                                    <li>
+                                <a href="finance.html" class="font">Calculate</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section>
+        <div class="content">
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Create Account</h1>
+			<div class="social-container">
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+			</div>
+
+			<button>Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Sign in</h1>
+			<div class="social-container">
+
+			</div>
+			<button>Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+        </div>
+            </section>
+        
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyArM4xKC89PCDxKuUmbzIK_VXSfGkSTil4",
+    authDomain: "hack-western-7-breeze.firebaseapp.com",
+    databaseURL: "https://hack-western-7-breeze.firebaseio.com",
+    projectId: "hack-western-7-breeze",
+    storageBucket: "hack-western-7-breeze.appspot.com",
+    messagingSenderId: "920364752742",
+    appId: "1:920364752742:web:81c0452ee053a461a8b2a7",
+    measurementId: "G-L5VB5EEY6X"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+                <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js'></script>
+    <script  src="./scriptsignup.js"></script>
+    </body>
+</html>
+
